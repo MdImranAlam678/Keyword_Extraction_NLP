@@ -287,13 +287,9 @@ This project is designed for:
 - Batch processing
 - API authentication
 
-## 📄 License
-
-This project is created for academic purposes.
-
 ## 👨‍💻 Author
 
-7th Semester Computer Science Engineering Student
+Md Imran Alam
 
 ## 🙏 Acknowledgments
 
