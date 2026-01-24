@@ -16,6 +16,12 @@ CORS(app)  # Enable CORS for frontend communication
 extractor = KeywordExtractor()
 
 
+@app.route('/', methods=['GET'])
+def root():
+    """Root endpoint"""
+    return jsonify({"message": "TF-IDF Keyword Extraction API", "status": "running"})
+
+
 @app.route('/api/health', methods=['GET'])
 def health_check():
     """Health check endpoint"""
@@ -95,6 +101,6 @@ def extract_keywords():
 if __name__ == '__main__':
     print("Starting TF-IDF Keyword Extraction API...")
     print("API will be available at http://localhost:5000")
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    app.run(debug=False, host='0.0.0.0', port=5000)
 
 
